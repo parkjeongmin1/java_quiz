@@ -6,14 +6,12 @@ public class quiz8 {
 
         int[] array = { 1, 5, 3, 8, 2 };
 
-        int max = array[0];
+        int max = 0;
 
-        for (int num:array){
-            if(num>max){
-                max = num;
-            }
+
+        for (int i = 0; i < array.length; i++) {
+            if (max<array[i]) max = array[i];
         }
-        System.out.println(max);
-
+        System.out.println("max: " + max);
     }
 }
