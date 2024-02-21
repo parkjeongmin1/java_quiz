@@ -43,6 +43,7 @@ public class BankApplication {
         Account newAccount = new Account(ano, owner, balance);
 
         for(int i=0; i<accountArray.length; i++) {
+            //계좌객체를 순서대로 저장하기 위해 null체크
             if(accountArray[i] == null) {
                 accountArray[i] = newAccount;
                 System.out.println("결과: 계좌가 생성되었습니다.");
@@ -59,6 +60,8 @@ public class BankApplication {
         System.out.println("--------------");
         for (int i = 0; i < accountArray.length; i++) {
             Account account = accountArray[i];
+
+            //accountArray 배열 안에서 Account 객체가 있는 부분만 가져온다.
             if (account != null) {
                 System.out.print(account.getAno());
                 System.out.print(" ");
