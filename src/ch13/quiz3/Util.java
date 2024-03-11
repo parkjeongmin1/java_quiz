@@ -9,5 +9,4 @@ public static <K,V>V getValue(Pair<K,V>pair,K key)
             return null;
         }
     }
-
 }
